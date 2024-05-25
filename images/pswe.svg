@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="528.0" height="288.0498091703303">
+  <rect width="100%" height="100%" fill="none"/>
+  <g transform="translate(24.0,273.0498091703303) scale(2.4 -2.4)">
+    <defs>
+      <marker id="arrowhead" viewBox="0 0 80 80" refX="35" refY="25" style="stroke-width: 2px; stroke: black; fill: black" markerWidth="7" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 5,25 L 0,40 L 40,25 L 0,10 Z"/>
+      </marker>
+    </defs>
+    <path d="M 0.0000,0.0000 L 200.0000,0.0000 L 100.0000,70.0208 Z" fill="pink" stroke-width="1.0" stroke="red" id="ydk-ydk"/>
+    <path d="M 18.0000,12.6037 L 182.0000,12.6037 L 100.0000,70.0208 Z" fill="lightblue" stroke-width="1.0" stroke="blue" id="yk-ydk"/>
+    <path d="M 64.0000,44.8133 L 136.0000,44.8133 L 100.0000,70.0208 Z" fill="lightgreen" stroke-width="1.0" stroke="green" id="yk-yk"/>
+    <text x="100" y="-47.81328244542142" font-family="Arial" font-size="6" text-anchor="middle" fill="black" transform="scale(1 -1)">Stuff you know</text>
+    <text x="100" y="-15.603735687774774" font-family="Arial" font-size="6" text-anchor="middle" fill="black" transform="scale(1 -1)">Stuff you know you don't know</text>
+    <text x="100" y="56" font-family="Arial" font-size="6" text-anchor="middle" fill="black" transform="scale(1 -1) translate(0 -60)">Stuff you don't know you don't know</text>
+    <g>
+      <path d="M 110,44.81328244542142 L 110,41.81328244542142 L 112,43.81328244542142 L 114,41.81328244542142 L 114,44.81328244542142" fill="lightgreen" stroke-width="0.9" stroke="green" id="banner"/>
+      <path d="M 110.45,45.71328244542142 L 110.45,44.36328244542142 L 113.55,44.36328244542142 L 113.55,45.71328244542142" fill="lightgreen" stroke-width="0" stroke="blue" id="banner"/>
+    </g>
+    <g>
+      <path d="M 119,44.81328244542142 L 119,42.81328244542142 L 120,43.81328244542142 L 121,42.81328244542142 L 121,44.81328244542142" fill="lightgreen" stroke-width="0.9" stroke="green" id="banner"/>
+      <path d="M 119.45,45.71328244542142 L 119.45,44.36328244542142 L 120.55,44.36328244542142 L 120.55,45.71328244542142" fill="lightgreen" stroke-width="0" stroke="blue" id="banner"/>
+    </g>
+    <g>
+      <path d="M 81,44.81328244542142 L 81,42.81328244542142 L 83,44.81328244542142 L 85,42.81328244542142 L 85,44.81328244542142" fill="lightgreen" stroke-width="0.9" stroke="green" id="banner"/>
+      <path d="M 81.45,45.71328244542142 L 81.45,44.36328244542142 L 84.55,44.36328244542142 L 84.55,45.71328244542142" fill="lightgreen" stroke-width="0" stroke="blue" id="banner"/>
+    </g>
+    <g>
+      <path d="M 90,44.81328244542142 L 90,33.81328244542142 L 91,34.81328244542142 L 92,33.81328244542142 L 92,44.81328244542142" fill="lightgreen" stroke-width="0.9" stroke="green" id="banner"/>
+      <path d="M 90.45,45.71328244542142 L 90.45,44.36328244542142 L 91.55,44.36328244542142 L 91.55,45.71328244542142" fill="lightgreen" stroke-width="0" stroke="blue" id="banner"/>
+    </g>
+    <g>
+      <path d="M 93,44.81328244542142 L 93,35.81328244542142 L 94,36.81328244542142 L 95,35.81328244542142 L 95,44.81328244542142" fill="lightgreen" stroke-width="0.9" stroke="green" id="banner"/>
+      <path d="M 93.45,45.71328244542142 L 93.45,44.36328244542142 L 94.55,44.36328244542142 L 94.55,45.71328244542142" fill="lightgreen" stroke-width="0" stroke="blue" id="banner"/>
+    </g>
+    <g id="technical-depth">
+      <line x1="23.0" y1="70.02075382097097" x2="97" y2="70.02075382097097" stroke="black" stroke-width="0.5"/>
+      <line x1="23.0" y1="44.81328244542142" x2="61.0" y2="44.81328244542142" stroke="black" stroke-width="0.5"/>
+      <line x1="38.0" y1="46.81328244542142" x2="38.0" y2="68.02075382097097" stroke="black" stroke-width="0.5" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+      <text x="40.0" y="-57.51556536572823" font-family="Arial" font-size="6" fill="black" transform="scale(1 -1)" text-anchor="start" marker-end="url(#arrowhead)">
+        <tspan dx="0" dy="0">Technical</tspan>
+        <tspan dx="-24" dy="7">Depth</tspan>
+      </text>
+    </g>
+    <g id="technical-breadth">
+      <line x1="18.0" y1="15.603735687774774" x2="18.0" y2="100.02075382097097" stroke="black" stroke-width="0.5"/>
+      <line x1="182.0" y1="15.603735687774774" x2="182.0" y2="100.02075382097097" stroke="black" stroke-width="0.5"/>
+      <line x1="20.0" y1="85.02075382097097" x2="68" y2="85.02075382097097" stroke="black" stroke-width="0.5" marker-start="url(#arrowhead)"/>
+      <line x1="134" y1="85.02075382097097" x2="180.0" y2="85.02075382097097" stroke="black" stroke-width="0.5" marker-end="url(#arrowhead)"/>
+      <text x="100" y="-23.020753820970967" font-family="Arial" font-size="6" text-anchor="middle" fill="black" transform="scale(1 -1) translate(0 -60)">Technical breadth</text>
+    </g>
+  </g>
+</svg>
