@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'nokogiri'
+
 # Banner element is used for technical depth.
 class Banner
   attr_accessor :xml
@@ -43,6 +45,10 @@ class Banner
 
   def fill_color
     options[:fill_color] || 'none'
+  end
+
+  def outfile
+    options[:outfile] || 'banner.svg'
   end
 
   # TODO: replace this with a line of appropriate length
@@ -99,5 +105,17 @@ class Banner
       outline
       top_line
     end
+  end
+
+  def self.write(_x_off, _y_off, options = {})
+    outfile = options[:outfile] || '/tmp/banner.svg'
+
+    banner = Nokogiri::XML::Builder.new do |xml|
+      xml.svg do
+        Banner.new(xml, 0, 0, options).draw
+      end
+    end
+
+    File.open(outfile, 'w') { |f| f.write(banner.to_xml) }
   end
 end
