@@ -1,0 +1,39 @@
+# .rubocop.yml
+
+require: rubocop-rspec
+
+# Specify the required Ruby version for your project.
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3
+  SuggestExtensions: true
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 15
+  # CountComments: false
+  # CountAsOne: true
+  AllowedMethods: ['describe', 'context', 'it', 'class', 'module', 'svg']
+
+Metrics/BlockLength:
+  Enabled: true
+  Max: 25
+  AllowedMethods: ['describe', 'context', 'it', 'class', 'module', 'svg']
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 15
+  AllowedMethods: ['outline', 'top_line', 'build']
+
+Layout/ArgumentAlignment:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: 2
+
+Naming/MethodParameterName:
+  AllowedNames:
+    - cx
+    - cy
+    - x
+    - y
+    - i

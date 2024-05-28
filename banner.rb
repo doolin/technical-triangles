@@ -74,6 +74,7 @@ class Banner
 
     d = "M #{a_x},#{-a_y} L #{b_x},#{-b_y} L #{d_x},#{-d_y} L #{e_x},#{-e_y}"
 
+    # TODO: Separate the xml writing from the logic
     xml.path(d:, fill:, 'stroke-width': 0, stroke: 'blue', id: 'banner')
   end
 

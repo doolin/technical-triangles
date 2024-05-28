@@ -25,4 +25,16 @@ class Arrowhead
       xml.path(d: 'M 5,25 L 0,40 L 40,25 L 0,10 Z')
     end
   end
+
+  def self.write(options = {})
+    filename = options[:outfile] || '/tmp/arrowhead.svg'
+
+    File.open(filename, 'w') do |f|
+      f.write(Nokogiri::XML::Builder.new do |xml|
+        xml.svg do
+          Arrowhead.new(xml).build
+        end
+      end.to_xml)
+    end
+  end
 end
