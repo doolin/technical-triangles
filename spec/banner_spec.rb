@@ -11,4 +11,11 @@ RSpec.describe Banner do
 
     expect(actual).to eq(expected)
   end
+
+  describe '#outline_path' do
+    it 'returns the outline path' do
+      banner = described_class.new(nil, 0, 0, width: 100, depth: 100, stroke_width: 2)
+      expect(banner.outline_path).to eq('M 0,0 L 0,-100 L 50,-50 L 100,-100 L 100,0')
+    end
+  end
 end

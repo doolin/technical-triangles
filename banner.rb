@@ -83,7 +83,7 @@ class Banner
   #   | c|
   #   |/\|
   #   b  d
-  def outline
+  def outline_path
     a_x = 0 + x_off
     a_y = 0 + y_off
     b_x = 0 + x_off
@@ -96,9 +96,12 @@ class Banner
     d_y = depth + y_off
     e_x = width + x_off
     e_y = 0 + y_off
-    d = "M #{a_x},#{-a_y} L #{b_x},#{-b_y} L #{c_x},#{-c_y} L #{d_x},#{-d_y} L #{e_x},#{-e_y}"
 
-    xml.path(d:, fill:, 'stroke-width': stroke_width, stroke:, id: 'banner')
+    "M #{a_x},#{-a_y} L #{b_x},#{-b_y} L #{c_x},#{-c_y} L #{d_x},#{-d_y} L #{e_x},#{-e_y}"
+  end
+
+  def outline
+    xml.path(d: outline_path, fill:, 'stroke-width': stroke_width, stroke:, id: 'banner')
   end
 
   def draw
