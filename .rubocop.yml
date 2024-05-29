@@ -23,7 +23,7 @@ Metrics/BlockLength:
 Metrics/AbcSize:
   Enabled: true
   Max: 15
-  AllowedMethods: ['outline_path', 'top_line', 'build']
+  AllowedMethods: ['outline_path', 'top_line_path', 'build']
 
 Layout/ArgumentAlignment:
   Enabled: true

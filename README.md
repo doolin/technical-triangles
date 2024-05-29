@@ -53,3 +53,7 @@ all of the computation is internal to each class. Adjustments
 to default parameter values are managed with optional arguments.
 
 
+### Testability
+
+It may seem stupid or overtested, but having known good output to test
+against has saved time particularly when refactoring for extension.

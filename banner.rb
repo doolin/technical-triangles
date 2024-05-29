@@ -57,7 +57,7 @@ class Banner
   #   a  e
   #   |  |
   #   b  d
-  def top_line
+  def top_line_path
     a_x = 0 + x_off + (stroke_width.to_f / 2)
     a_y = 0 + y_off - (0 + stroke_width.to_f)
 
@@ -72,10 +72,11 @@ class Banner
     e_x = width + x_off - (stroke_width.to_f / 2)
     e_y = 0 + y_off - (0 + stroke_width.to_f)
 
-    d = "M #{a_x},#{-a_y} L #{b_x},#{-b_y} L #{d_x},#{-d_y} L #{e_x},#{-e_y}"
+    "M #{a_x},#{-a_y} L #{b_x},#{-b_y} L #{d_x},#{-d_y} L #{e_x},#{-e_y}"
+  end
 
-    # TODO: Separate the xml writing from the logic
-    xml.path(d:, fill:, 'stroke-width': 0, stroke: 'blue', id: 'banner')
+  def top_line
+    xml.path(d: top_line_path, fill:, 'stroke-width': 0, stroke: 'blue', id: 'banner')
   end
 
   #   a  e
