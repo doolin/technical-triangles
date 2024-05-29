@@ -121,6 +121,6 @@ class Banner
       end
     end
 
-    File.open(outfile, 'w') { |f| f.write(banner.to_xml) }
+    File.write(outfile, banner.to_xml)
   end
 end
