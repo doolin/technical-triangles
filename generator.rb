@@ -279,6 +279,17 @@ class Trigen
     "translate(#{width},#{height}) scale(#{SCALE_FACTOR} -#{SCALE_FACTOR})"
   end
 
+  # TODO: figure out how to test this.
+  def self.write(outfile, options = {})
+    result = new(options).build do |xml, scale, banner_y, ykyk_fill|
+      Banner.new(xml, scale + 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 3).draw
+      Banner.new(xml, scale - 18, banner_y, fill: ykyk_fill, stroke: 'green', depth: 12).draw
+      Banner.new(xml, scale - 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 19, width: 6).draw
+    end
+
+    File.write(outfile, result.to_xml)
+  end
+
   def build
     Nokogiri::XML::Builder.new(encoding: 'UTF-8') do |xml|
       xml.svg(svg_attrs) do
@@ -298,6 +309,8 @@ class Trigen
           xml.text_("Stuff you know you don't know", yk_ydk)
           xml.text_("Stuff you don't know you don't know", ydk_ydk)
 
+          # TODO: This is difficult to test, the variables are computed
+          # from the class.
           yield(xml, BASELINE, banner_y, ykyk_fill) if block_given?
 
           xml.g(id: 'technical-depth') do
