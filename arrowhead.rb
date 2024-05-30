@@ -24,14 +24,12 @@ class Arrowhead
     }
   end
 
-  # TODO: write a spec
   def outline
     'M 5,25 L 0,40 L 40,25 L 0,10 Z'
   end
 
   def build
     xml.marker(marker) do
-      # xml.path(d: 'M 5,25 L 0,40 L 40,25 L 0,10 Z')
       xml.path(d: outline)
     end
   end

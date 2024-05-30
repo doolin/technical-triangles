@@ -11,4 +11,11 @@ RSpec.describe Arrowhead do
 
     expect(actual).to eq(expected)
   end
+
+  describe '#outline' do
+    it 'draws an arrowhead path' do
+      arrowhead = described_class.new(nil)
+      expect(arrowhead.outline).to eq('M 5,25 L 0,40 L 40,25 L 0,10 Z')
+    end
+  end
 end

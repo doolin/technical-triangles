@@ -256,24 +256,6 @@ class Trigen
     }
   end
 
-  # https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker
-  # https://blog.shalvah.me/posts/learn-svg-by-drawing-an-arrow
-  def arrowhead(xml)
-    xml.marker(
-      id: 'arrowhead',
-      viewBox: '0 0 80 80',
-      refX: '35',
-      refY: '25',
-      style: 'stroke-width: 2px; stroke: black; fill: black',
-      markerWidth: '7',
-      markerHeight: '11',
-      markerUnits: 'userSpaceOnUse',
-      orient: 'auto-start-reverse'
-    ) do
-      xml.path(d: 'M 5,25 L 0,40 L 40,25 L 0,10 Z')
-    end
-  end
-
   def image_height
     BASELINE + (Math.tan(r2d(angle)) * BASELINE) - 50
   end
