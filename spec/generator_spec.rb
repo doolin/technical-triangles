@@ -3,7 +3,7 @@
 require 'spec_helper'
 require_relative '../generator'
 
-RSpec.describe Trigen do
+RSpec.describe Generator do
   it 'compares output' do
     options = {
       ykyk_fill: 'lightgreen',

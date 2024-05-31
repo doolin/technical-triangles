@@ -13,7 +13,7 @@ require_relative 'arrowhead'
 
 # Parameterize the technical depth triangle from
 # the book "Fundamnentals of Software Architecture"
-class Trigen
+class Generator
   BASELINE = 100
   GAP = 3
   ARROW_GAP = 2
@@ -343,12 +343,12 @@ options = {
   first_line_offset: 0.125,
   second_line_offset: 0.28
 }
-trigen = Trigen.new(options).build do |xml, scale, banner_y, ykyk_fill|
+result = Generator.new(options).build do |xml, scale, banner_y, ykyk_fill|
   Banner.new(xml, scale + 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 3).draw
   Banner.new(xml, scale - 18, banner_y, fill: ykyk_fill, stroke: 'green', depth: 12).draw
   Banner.new(xml, scale - 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 19, width: 6).draw
 end
-File.write('images/sswe.svg', trigen.to_xml)
+File.write('images/sswe.svg', result.to_xml)
 
 options = {
   ykyk_fill: 'lightgreen',
@@ -358,12 +358,12 @@ options = {
   first_line_offset: 0.09,
   second_line_offset: 0.14
 }
-trigen = Trigen.new(options).build do |xml, scale, banner_y, ykyk_fill|
+result = Generator.new(options).build do |xml, scale, banner_y, ykyk_fill|
   Banner.new(xml, scale + 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 3).draw
   Banner.new(xml, scale - 19, banner_y, fill: ykyk_fill, stroke: 'green', depth: 2).draw
   # Banner.new(xml, scale - 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 19, width: 6).draw
 end
-File.write('images/jswe.svg', trigen.to_xml)
+File.write('images/jswe.svg', result.to_xml)
 
 options = {
   ykyk_fill: 'lightgreen',
@@ -373,11 +373,11 @@ options = {
   first_line_offset: 0.09,
   second_line_offset: 0.32
 }
-trigen = Trigen.new(options).build do |xml, scale, banner_y, ykyk_fill|
+result = Generator.new(options).build do |xml, scale, banner_y, ykyk_fill|
   Banner.new(xml, scale + 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 3).draw
   Banner.new(xml, scale + 19, banner_y, fill: ykyk_fill, stroke: 'green', depth: 2, width: 2).draw
   Banner.new(xml, scale - 19, banner_y, fill: ykyk_fill, stroke: 'green', depth: 2).draw
   Banner.new(xml, scale - 10, banner_y, fill: ykyk_fill, stroke: 'green', depth: 11, width: 2).draw
   Banner.new(xml, scale - 7, banner_y, fill: ykyk_fill, stroke: 'green', depth: 9, width: 2).draw
 end
-File.write('images/pswe.svg', trigen.to_xml)
+File.write('images/pswe.svg', result.to_xml)
