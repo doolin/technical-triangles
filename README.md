@@ -5,6 +5,20 @@ In Chapter 2 of Richards & Ford [Fundamentals of Software Architecture](https://
 ![Technical triangle](images/sswe.svg)
 
 
+## Depth-focused engineer
+
+Trading breadth for extreme depth results in the following:
+
+![Depth-focused](images/jswe.svg)
+
+This is a good characterization for junior engineers, but also works at any level for an engineer who can maintain a depth-oriented career. The risk is going too deep into a deadend, or becoming an [Expert Beginner](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
+
+
+## Breadth-focused engineer
+
+![Breadth-focused](images/pswe.svg)
+
+
 ## Implementation notes
 
 As noted, the work was inspired by material from Chapter 2 of _Fundamentals of Software Architecture_.
