@@ -7,7 +7,7 @@
         <path d="M 5,25 L 0,40 L 40,25 L 0,10 Z"/>
       </marker>
     </defs>
-    <path d="M 0.0000,0.0000 L 200.0000,0.0000 L 100.0000,142.8148 Z" fill="pink" stroke-width="1.0" stroke="red" id="ydk-ydk"/>
+    <path d="M 0.0000,0.0000 L 200.0000,0.0000 L 100.0000,142.8148 Z" fill="pink" stroke-width="1.0" stroke-dasharray="5, 2" stroke="red" id="ydk-ydk"/>
     <path d="M 18.0000,25.7067 L 182.0000,25.7067 L 100.0000,142.8148 Z" fill="lightblue" stroke-width="1.0" stroke="blue" id="yk-ydk"/>
     <path d="M 28.0000,39.9881 L 172.0000,39.9881 L 100.0000,142.8148 Z" fill="lightgreen" stroke-width="1.0" stroke="green" id="yk-yk"/>
     <text x="100" y="-42.98814418877921" font-family="Arial" font-size="6" text-anchor="middle" fill="black" transform="scale(1 -1)">Stuff you know</text>

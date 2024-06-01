@@ -51,6 +51,7 @@ class Generator
       d: triangle(0.0),
       fill: ydkydk_fill,
       'stroke-width' => '1.0',
+      'stroke-dasharray' => '5, 2',
       stroke: 'red',
       id: 'ydk-ydk'
     }
