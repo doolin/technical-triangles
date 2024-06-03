@@ -3,6 +3,7 @@
 
 require 'nokogiri'
 
+# Red triangle should have a gradient.
 class Gradient
   attr_accessor :width, :height, :vertices, :gradient_colors, :gradient_center
 
@@ -47,10 +48,10 @@ class Gradient
 end
 
 # Define triangle vertices and gradient details
-vertices = [{x: 50, y: 50}, {x: 150, y: 50}, {x: 100, y: 150}]
+vertices = [{ x: 50, y: 50 }, { x: 150, y: 50 }, { x: 100, y: 150 }]
 # gradient_colors = {'0%' => '#ff0000', '100%' => '#0000ff'}
-gradient_colors = {'30%' => '#ff0450', '20%' => '#ff00ff'}
-gradient_center = {x: 50, y: 50}
+gradient_colors = { '30%' => '#ff0450', '20%' => '#ff00ff' }
+gradient_center = { x: 50, y: 50 }
 
 # Create an instance of the Gradient class
 svg_creator = Gradient.new(
@@ -61,6 +62,4 @@ svg_creator = Gradient.new(
   gradient_center:
 )
 
-# Generate SVG
-svg_content = svg_creator.generate_svg
-# puts svg_content
+svg_creator.generate_svg
