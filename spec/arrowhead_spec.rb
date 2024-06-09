@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../arrowhead'
+require_relative '../lib/arrowhead'
 
 RSpec.describe Arrowhead do
   it 'compares output' do

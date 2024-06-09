@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../banner'
+require_relative '../lib/banner'
 
 RSpec.describe Banner do
   it 'compares output' do

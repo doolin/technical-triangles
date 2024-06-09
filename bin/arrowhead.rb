@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require 'nokogiri'
-require_relative '../arrowhead'
+require_relative '../lib/arrowhead'
 
 options = { outfile: '/tmp/arrowhead.svg' }
 Arrowhead.write(options)

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../generator'
+require_relative '../lib/generator'
 
 RSpec.describe Generator do
   it 'compares output' do
