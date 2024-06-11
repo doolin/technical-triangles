@@ -13,7 +13,7 @@ RSpec.describe Generator do
       first_line_offset: 0.125,
       second_line_offset: 0.28
     }
-    expected = File.read('spec/proofs/sswe.svg').to_s
+    expected = File.read('proofs/sswe.svg').to_s
     # TODO: will need to pass in a block for banners.
     described_class.write('/tmp/sswe.svg', options)
     actual = File.read('/tmp/sswe.svg').to_s

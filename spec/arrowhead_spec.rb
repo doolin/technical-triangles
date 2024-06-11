@@ -5,7 +5,7 @@ require_relative '../lib/arrowhead'
 
 RSpec.describe Arrowhead do
   it 'compares output' do
-    expected = File.read('spec/proofs/arrowhead.svg').to_s
+    expected = File.read('proofs/arrowhead.svg').to_s
     described_class.write(outfile: '/tmp/arrowhead.svg')
     actual = File.read('/tmp/arrowhead.svg').to_s
 

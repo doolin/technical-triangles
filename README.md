@@ -7,6 +7,16 @@ In Chapter 2 of Richards & Ford [Fundamentals of Software Architecture](https://
 It's important to understand that this and the following diagrams are subjective
 and qualitative, best used for thinking aids and discussion tools.
 
+## Degrees of experience
+
+- Heard about
+- Read About
+- Wrote example, toy problem
+- Implemented once for production
+- Multiple production implementations
+- Can debugged running instances
+
+
 ## Depth-focused engineer
 
 Trading breadth for extreme depth results in the following:
