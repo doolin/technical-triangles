@@ -13,7 +13,6 @@ require_relative 'arrowhead'
 # Parameterize the technical depth triangle from
 # the book "Fundamnentals of Software Architecture"
 class Generator
-  BASELINE = 100
   GAP = 3
   ARROW_GAP = 2
   FONT_SIZE = 6
@@ -28,8 +27,12 @@ class Generator
     radians * Math::PI / 180
   end
 
+  def baseline
+    @options[:baseline] || 100
+  end
+
   def resize(value)
-    2 * BASELINE * value
+    2 * baseline * value
   end
 
   # bxr = bottom x right, etc
@@ -37,14 +40,14 @@ class Generator
     bxr = resize(offset)
     bxl = resize(1 - offset)
     by = bxr * Math.tan(r2d(angle))
-    xe = BASELINE
+    xe = baseline
     ye = xe * Math.tan(r2d(angle))
 
     format('M %<bxr>.4f,%<by>.4f L %<bxl>.4f,%<by>.4f L %<xe>.4f,%<ye>.4f Z',
       bxr:, by:, bxl:, xe:, ye:)
   end
 
-  # The base of the red triangle is 2*BASELINE.
+  # The base of the red triangle is 2*baseline.
   def red_triangle
     {
       d: triangle(0.0),
@@ -102,25 +105,25 @@ class Generator
 
   def breadth_line_left
     x1 = resize(first_line_offset) + ARROW_GAP
-    x2 = BASELINE - 32
-    y1 = y2 =   (BASELINE * Math.tan(r2d(angle))) + 15
+    x2 = baseline - 32
+    y1 = y2 =   (baseline * Math.tan(r2d(angle))) + 15
 
     { x1:, y1:, x2:, y2:, stroke: 'black', 'stroke-width': '0.5', 'marker-start': 'url(#arrowhead)' }
   end
 
   def breadth_line_right
     x2 = resize(1 - first_line_offset) - ARROW_GAP
-    x1 = BASELINE + 34
-    y1 = y2 =   (BASELINE * Math.tan(r2d(angle))) + 15
+    x1 = baseline + 34
+    y1 = y2 =   (baseline * Math.tan(r2d(angle))) + 15
 
     { x1:, y1:, x2:, y2:, stroke: 'black', 'stroke-width': '0.5', 'marker-end': 'url(#arrowhead)' }
   end
 
   def depth_bracket_top
     x1 = resize(first_line_offset) + ARROW_GAP + GAP
-    xe = BASELINE
+    xe = baseline
     x2 = xe - GAP
-    y1 = y2 = BASELINE * Math.tan(r2d(angle))
+    y1 = y2 = baseline * Math.tan(r2d(angle))
 
     { x1:, y1:, x2:, y2:, stroke: 'black', 'stroke-width': '0.5' }
   end
@@ -141,12 +144,12 @@ class Generator
   def depth_arrows
     xe = resize(second_line_offset)
     y = (xe * Math.tan(r2d(angle))) # - GAP
-    x1 = x2 = (0.5 * BASELINE) - 12
+    x1 = x2 = (0.5 * baseline) - 12
 
     # This is the bottom arrowhead
     y1 = y + ARROW_GAP
     # Top arrowhead
-    y2 = (BASELINE * Math.tan(r2d(angle))) - ARROW_GAP
+    y2 = (baseline * Math.tan(r2d(angle))) - ARROW_GAP
 
     {
       x1:,
@@ -170,7 +173,7 @@ class Generator
     x1 = resize(offset)
     y1 = (x1 * Math.tan(r2d(angle))) + GAP
     x2 = x1
-    y2 = (BASELINE * Math.tan(r2d(angle))) + 30
+    y2 = (baseline * Math.tan(r2d(angle))) + 30
 
     { x1:, y1:, x2:, y2:, stroke: 'black', 'stroke-width': '0.5' }
   end
@@ -181,7 +184,7 @@ class Generator
     x1 = resize(1 - offset)
     y1 = (resize(offset) * Math.tan(r2d(angle))) + GAP
     x2 = x1
-    y2 = (BASELINE * Math.tan(r2d(angle))) + 30
+    y2 = (baseline * Math.tan(r2d(angle))) + 30
 
     { x1:, y1:, x2:, y2:, stroke: 'black', 'stroke-width': '0.5' }
   end
@@ -191,7 +194,7 @@ class Generator
     y = -(xe * Math.tan(r2d(angle))) - GAP
 
     {
-      x: BASELINE,
+      x: baseline,
       y:,
       'font-family': 'Arial',
       'font-size': FONT_SIZE,
@@ -206,7 +209,7 @@ class Generator
     y = -(xe * Math.tan(r2d(angle))) - GAP
 
     {
-      x: BASELINE,
+      x: baseline,
       y:,
       'font-family': 'Arial',
       'font-size': FONT_SIZE,
@@ -218,7 +221,7 @@ class Generator
 
   def ydk_ydk
     {
-      x: BASELINE,
+      x: baseline,
       y: '56',
       'font-family': 'Arial',
       'font-size': FONT_SIZE,
@@ -229,10 +232,10 @@ class Generator
   end
 
   def technical_breadth
-    y = (-BASELINE * Math.tan(r2d(angle))) + 47
+    y = (-baseline * Math.tan(r2d(angle))) + 47
 
     {
-      x: BASELINE,
+      x: baseline,
       y:,
       'font-family': 'Arial',
       'font-size': FONT_SIZE,
@@ -244,8 +247,8 @@ class Generator
 
   def technical_depth
     {
-      x: (0.5 * BASELINE) - 10,
-      y: (-((BASELINE / 2) + BASELINE) / 2 * Math.tan(r2d(angle))) - 5,
+      x: (0.5 * baseline) - 10,
+      y: (-((baseline / 2) + baseline) / 2 * Math.tan(r2d(angle))) - 5,
       'font-family': 'Arial',
       'font-size': FONT_SIZE,
       fill: 'black',
@@ -256,11 +259,11 @@ class Generator
   end
 
   def image_height
-    BASELINE + (Math.tan(r2d(angle)) * BASELINE) - 50
+    baseline + (Math.tan(r2d(angle)) * baseline) - 50
   end
 
   def image_width
-    (BASELINE + PADDING) * 2
+    (baseline + PADDING) * 2
   end
 
   def svg_attrs
@@ -310,7 +313,7 @@ class Generator
 
           # TODO: This is difficult to test, the variables are computed
           # from the class.
-          yield(xml, BASELINE, banner_y, ykyk_fill) if block_given?
+          yield(xml, baseline, banner_y, ykyk_fill) if block_given?
 
           xml.g(id: 'technical-depth') do
             xml.line(depth_bracket_top)

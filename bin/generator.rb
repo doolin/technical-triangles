@@ -4,6 +4,7 @@
 require_relative '../lib/generator'
 
 options = {
+  # baseline: 100,
   ykyk_fill: 'lightgreen',
   ykydk_fill: 'lightblue',
   ydkydk_fill: 'pink',
@@ -19,6 +20,7 @@ end
 File.write('images/sswe.svg', triangle.to_xml)
 
 options = {
+  # baseline: 100,
   ykyk_fill: 'lightgreen',
   ykydk_fill: 'lightblue',
   ydkydk_fill: 'pink',
@@ -34,6 +36,7 @@ end
 File.write('images/jswe.svg', triangle.to_xml)
 
 options = {
+  # baseline: 100,
   ykyk_fill: 'lightgreen',
   ykydk_fill: 'lightblue',
   ydkydk_fill: 'pink',
