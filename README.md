@@ -15,8 +15,10 @@ and qualitative, best used for thinking aids and discussion tools.
   engineering.
 - **Read About**: directed reading on the subject to some depth, focused attention
   on the subject.
-- **Wrote example, toy problem**: a running example. Even a small example will
-  expose the main concept of the subject.
+- **Wrote about**: blog post, summary article
+- **Took a class**: the subject was one of the primary topics of the class.
+- **Toy implementation**: a running example. Even a small example usually
+  exposes the main concept of the subject.
 - **Implemented once for production**: might have been, and probably was, years ago.
   With some time, you can relearn and reimplement, you have experienced the major
   pitfalls.
