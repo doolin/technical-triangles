@@ -9,12 +9,21 @@ and qualitative, best used for thinking aids and discussion tools.
 
 ## Degrees of experience
 
-- Heard about
-- Read About
-- Wrote example, toy problem
-- Implemented once for production
-- Multiple production implementations
-- Can debugged running instances
+- **Heard about**: the subject is something which has come up in disucssion,
+  or you have seen mentioned tangentially in an article. You can classify or
+  categorize the subject matter. For example, dtb is something to do with data
+  engineering.
+- **Read About**: directed reading on the subject to some depth, focused attention
+  on the subject.
+- **Wrote example, toy problem**: a running example. Even a small example will
+  expose the main concept of the subject.
+- **Implemented once for production**: might have been, and probably was, years ago.
+  With some time, you can relearn and reimplement, you have experienced the major
+  pitfalls.
+- **Multiple production implementations**: Not only major pitfalls, but have dealt
+  with both usual and unusual edge cases.
+- **Can debugged running instances**: you have or have had extensive day to day experience
+  with the subject.
 
 
 ## Depth-focused engineer
