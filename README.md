@@ -9,23 +9,27 @@ and qualitative, best used for thinking aids and discussion tools.
 
 ## Degrees of experience
 
-- **Heard about**: the subject is something which has come up in disucssion,
+1. **Heard about**: the subject is something which has come up in disucssion,
   or you have seen mentioned tangentially in an article. You can classify or
   categorize the subject matter. For example, dtb is something to do with data
   engineering.
-- **Read About**: directed reading on the subject to some depth, focused attention
-  on the subject.
-- **Wrote about**: blog post, summary article
-- **Took a class**: the subject was one of the primary topics of the class.
-- **Toy implementation**: a running example. Even a small example usually
+1. **Read About**: directed reading on the subject to some depth, focused attention
+  on the subject. You are able to ask intelligent questions about the subject.
+1. **Wrote about**: blog post, summary article which is well-referenced.
+  You know who the person or the company responsible for or driving development.
+1. **Took a class**: the subject was one of the primary topics of the class.
+1. **Toy implementation**: a running example. Even a small example usually
   exposes the main concept of the subject.
-- **Implemented once for production**: might have been, and probably was, years ago.
+1. **Implemented once for production**: might have been, and probably was, years ago.
   With some time, you can relearn and reimplement, you have experienced the major
   pitfalls.
-- **Multiple production implementations**: Not only major pitfalls, but have dealt
+1. **Multiple production implementations**: Not only major pitfalls, but have dealt
   with both usual and unusual edge cases.
-- **Can debugged running instances**: you have or have had extensive day to day experience
+1. **Can debug running instances**: you have or have had extensive day to day experience
   with the subject.
+1. **Implementation contributor** your pull requests are merged into releaed subject.
+1. **Core maintainer or subject founder** You are Linus, Bjarne, Ken, Matz, Rich, Guido,
+   or have release privileges for the subject.
 
 
 ## Depth-focused engineer
