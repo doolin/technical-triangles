@@ -9,6 +9,10 @@ and qualitative, best used for thinking aids and discussion tools.
 
 ## Degrees of experience
 
+How does one know what one knows? How do we characterize our knowledge?
+Is there an epistemic justification for classifying our personal knowledge?
+
+
 1. **Heard about**: the subject is something which has come up in disucssion,
   or you have seen mentioned tangentially in an article. You can classify or
   categorize the subject matter. For example, dtb is something to do with data
