@@ -21,9 +21,10 @@ Is there an epistemic justification for classifying our personal knowledge?
   on the subject. You are able to ask intelligent questions about the subject.
 1. **Wrote about**: blog post, summary article which is well-referenced.
   You know who the person or the company responsible for or driving development.
-1. **Took a class**: the subject was one of the primary topics of the class.
 1. **Toy implementation**: a running example. Even a small example usually
   exposes the main concept of the subject.
+1. **Took a class**: the subject was one of the primary topics of the class.
+1. **Taught a class**: responsible for syllabus and primary instruction.
 1. **Implemented once for production**: might have been, and probably was, years ago.
   With some time, you can relearn and reimplement, you have experienced the major
   pitfalls.
