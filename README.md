@@ -1,11 +1,26 @@
 # Technical Triangles
 
-In Chapter 2 of Richards & Ford [Fundamentals of Software Architecture](https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture) the authors present an interesting characterization of technical knowledge encoding Rumsfeld's notions of what is and is not known.
+In Chapter 2 of Richards & Ford [Fundamentals of Software
+Architecture](https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture)
+the authors present an interesting characterization of technical knowledge encoding Rumsfeld's
+notions of what is and is not known.
 
 ![Technical triangle](images/sswe.svg)
 
-It's important to understand that this and the following diagrams are subjective
-and qualitative, best used for thinking aids and discussion tools.
+It's important to understand that this and the following diagrams are
+subjective and qualitative, best used for thinking aids and discussion tools.
+
+Another point of view might be:
+
+- the green triangle is Stuff You Must Maintain
+- the blue triangle could be Stuff You Used to Know But Can't Recall
+
+In particular, the blue area could be analogous to knowledge
+stored as patterns in the brain, which manifests as "intuition."
+This is knowledge which is in deep storage, analoguous to the
+storage locker across town, or AWS Glacier. It's knowledge,
+but the brain has to put in an "access" request to get the
+subconscious to dredge up details and rationale.
 
 ## Degrees of experience
 
@@ -43,16 +58,20 @@ Trading breadth for extreme depth results in the following:
 
 ![Depth-focused](images/jswe.svg)
 
-This is a good characterization for junior engineers, but also works at any level for an engineer who can maintain a depth-oriented career. The risk is going too deep into a deadend, or becoming an [Expert Beginner](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
+This is a good characterization for junior engineers, but also works at any
+level for an engineer who can maintain a depth-oriented career. The risk is
+going too deep into a deadend, or becoming an [Expert
+Beginner](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
 
 
 ## Breadth-focused engineer
 
 ![Breadth-focused](images/pswe.svg)
 
-This is a common situation for very senior engineers, particularly at the Staff+ or Software Architect level.
-Over the course of decades the amount of technology someone "knows about" vastly exceeds the technology
-someone is conversant with on a day to day basis.
+This is a common situation for very senior engineers, particularly at the
+Staff+ or Software Architect level.  Over the course of decades the amount of
+technology someone "knows about" vastly exceeds the technology someone is
+conversant with on a day to day basis.
 
 ## Implementation notes
 
